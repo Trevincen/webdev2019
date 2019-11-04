@@ -2,8 +2,8 @@
 @section('content')
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    
 	<h1>Blog Posts</h1>        	
-	@if(count($post)>0)             
-		@foreach ($post as $post)                
+	@if(count($posts)>0)             
+		@foreach ($posts as $post)                
 		<div class="card" style="width: 18rem;">
 			<div class="card-body">
 			  <h5 class="card-title">{{$post->title}} </h5>
@@ -11,8 +11,10 @@
 			  <a href="#" class="btn btn-primary">Naice</a>
 			</div>
 		  </div>               
-		@endforeach         
+		@endforeach      
+		{{ $posts->links() }}   
 	@else             
 		<h3>Tidak ada data.</h3>        
 	@endif 
+	
 @endsection

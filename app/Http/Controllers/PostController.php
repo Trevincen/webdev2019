@@ -14,8 +14,8 @@ class PostController extends Controller
      */
     public function index()    {        
         $data = array(            
-            'id' => "post",            
-            'post' => Post::all()        
+            'id' => "posts",            
+            'posts' => Post::paginate(1)        
             );        
         return view('posts.index')->with($data);    
     }
