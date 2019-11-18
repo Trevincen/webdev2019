@@ -15,7 +15,7 @@ class PostController extends Controller
     public function index()    {        
         $data = array(            
             'id' => "posts",            
-            'posts' => Post::paginate(1)        
+            'posts' => Post::paginate(2)        
             );        
         return view('posts.index')->with($data);    
     }
@@ -27,7 +27,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return view('makanan.create');
     }
 
     /**
@@ -38,7 +38,20 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+	    $this->validate($request, [
+		    'title' => 'required',
+            'description' => 'required',
+            'Price' => 'required'
+            
+        ]);
+        
+        $data = new Post();
+        $data->title = $request->input('title');
+        $data->description = $request->input('description');
+        $data->Price = $request->input('Price');
+        $data->save();
+
+        return redirect('/post')->with('success', 'Data Makanan telah disimpan');
     }
 
     /**
@@ -60,7 +73,11 @@ class PostController extends Controller
      */
     public function edit($id)
     {
-        //
+        $data = array(            
+            'id' => "posts",            
+            'posts' => Post::find($id)        
+            );        
+        return view('posts.edit')->with($data);    
     }
 
     /**
@@ -72,7 +89,13 @@ class PostController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $edit = new Post();
+        $edit->title = $request->input('title');
+        $edit->description = $request->input('description');
+        $edit->Price = $request->input('Price');
+        $edit->save();
+
+        return redirect('/post')->with('success', 'Data Makanan telah diubah');
     }
 
     /**
@@ -83,6 +106,7 @@ class PostController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Post::find($id)->delete();
+        return redirect('/post')->with('success', 'Data Makanan telah dihapus');
     }
 }
