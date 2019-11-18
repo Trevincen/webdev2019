@@ -37,6 +37,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ url('/post/create') }}">Create</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url('/') }}">Back to Page</a>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
