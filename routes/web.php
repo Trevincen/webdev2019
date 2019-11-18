@@ -25,6 +25,3 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/post/{post}/edit','PostController@edit');
-Route::patch('/post/{post}','PostController@update');
-
