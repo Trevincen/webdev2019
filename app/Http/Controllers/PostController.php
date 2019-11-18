@@ -89,7 +89,7 @@ class PostController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $edit = new Post();
+        $edit = post::find($id);
         $edit->title = $request->input('title');
         $edit->description = $request->input('description');
         $edit->Price = $request->input('Price');
