@@ -62,7 +62,11 @@ class PostController extends Controller
      */
     public function show($id)
     {
-        //
+        $data = array(            
+            'id' => "posts",            
+            'posts' => Post::paginate(2)        
+            );        
+        return view('/product')->with($data);    
     }
 
     /**

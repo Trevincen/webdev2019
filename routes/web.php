@@ -14,6 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/product', function () {
+    return view('product');
+});
+
 Route::resource('/post','PostController');
 
 
