@@ -64,7 +64,7 @@ class PostController extends Controller
     {
         $data = array(            
             'id' => "posts",            
-            'posts' => Post::paginate(2)        
+            'posts' => Post::find($id)        
             );        
         return view('/product')->with($data);    
     }

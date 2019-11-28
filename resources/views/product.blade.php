@@ -92,7 +92,8 @@
     <div class="practice_area practice_area2">
         <div class="container-fluid p-0">
             <div class="row no-gutters">
-                @for ($i = 0; $i < 3; $i++)
+                @if(count($posts)>0)             
+		        @foreach ($posts as $post)    
                 <div class="col-xl-3 col-md-6">
                         <div class="single_practice">
                             <div class="practice_image">
@@ -101,7 +102,7 @@
                             <div class="practice_hover text-center">
                                 <div class="hover_inner">
                                     <i class="flaticon-case"></i>
-                                    <h3>Business Law</h3>
+                                    <h3>{{$post->title}}</h3>
                                     <p>There are many variations of passages of <br> Lorem Ipsum available, <br> but the
                                         majority have suffered</p>
                                     <a href="#" class="lern_more">Learn More</a>
@@ -109,7 +110,8 @@
                             </div>
                         </div>
                     </div>
-                @endfor
+                    @endforeach  
+                    @endif
                 
                 {{-- <div class="col-xl-3 col-md-6">
                     <div class="single_practice">

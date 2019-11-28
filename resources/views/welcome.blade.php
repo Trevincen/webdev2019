@@ -51,18 +51,7 @@
                                         <li><a class="active" href="index.html">home</a></li>
                                         <li><a href="/post">Admin</a></li>
                                         <li><a href="/product">Product</a></li>
-                                        <li><a href="#">blog <i class="ti-angle-down"></i></a>
-                                            <ul class="submenu">
-                                                <li><a href="blog.html">blog</a></li>
-                                                <li><a href="single-blog.html">single-blog</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">pages <i class="ti-angle-down"></i></a>
-                                            <ul class="submenu">
-                                                <li><a href="elements.html">elements</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="/contact">Contact</a></li>
                                     </ul>
                                 </nav>
                             </div>

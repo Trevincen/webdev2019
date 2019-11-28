@@ -14,9 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/product', function () {
-    return view('product');
+// Route::get('/product', function () {
+//     return view('product');
+// });
+Route::get('/contact', function () {
+    return view('contact');
 });
+
 
 Route::resource('/post','PostController');
 
@@ -28,4 +32,9 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/product', 'PostController@show')->name('posts');
+
 
