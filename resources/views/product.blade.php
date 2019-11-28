@@ -93,11 +93,7 @@
         <div class="container-fluid p-0">
             <div class="row no-gutters">
                 @if(count($posts)>0)             
-<<<<<<< HEAD
 		        @foreach ($posts as $post)    
-=======
-            @foreach ($posts as $post)
->>>>>>> 9fb1f2ee4c607c957eec6cf5960a52153aea0f11
                 <div class="col-xl-3 col-md-6">
                         <div class="single_practice">
                             <div class="practice_image">

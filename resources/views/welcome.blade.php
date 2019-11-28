@@ -49,22 +49,8 @@
                                 <nav>
                                     <ul id="navigation">
                                         <li><a class="active" href="index.html">home</a></li>
-                                        <li><a href="/posts">Admin</a></li>
+                                        <li><a href="/post">Admin</a></li>
                                         <li><a href="/product">Product</a></li>
-<<<<<<< HEAD
-=======
-                                        <li><a href="#">blog <i class="ti-angle-down"></i></a>
-                                            <ul class="submenu">
-                                                <li><a href="blog.html">blog</a></li>
-                                                <li><a href="single-blog.html">single-blog</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">pages <i class="ti-angle-down"></i></a>
-                                            <ul class="submenu">
-                                                <li><a href="elements.html">elements</a></li>
-                                            </ul>
-                                        </li>
->>>>>>> 9fb1f2ee4c607c957eec6cf5960a52153aea0f11
                                         <li><a href="/contact">Contact</a></li>
                                     </ul>
                                 </nav>
@@ -110,8 +96,8 @@
     </div>
     <!-- slider_area_end -->
 
-     <!-- about_area _start  -->
-    {{-- <div class="about_area">
+    {{-- <!-- about_area _start  -->
+    <div class="about_area">
         <div class="opacity_icon d-none d-lg-block">
             <i class="flaticon-balance"></i>
         </div>
@@ -397,7 +383,7 @@
                 </div>
             </div>
         </div>
-    </div> --}}
+    </div>
 
     <!-- footer_start -->
     <footer class="footer">
@@ -435,7 +421,20 @@
                             </div>
                         </div>
                     </div>
-                    
+                    <div class="col-xl-2 col-md-6 col-lg-2">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                    Practice Area
+                            </h3>
+                            <ul>
+                                <li><a href="#">Business law
+                                    </a></li>
+                                <li><a href="#">Finance law</a></li>
+                                <li><a href="#">Education law</a></li>
+                                <li><a href="#">Family law</a></li>
+                            </ul>
+                        </div>
+                    </div>
                     <div class="col-xl-2 col-md-6 col-lg-2">
                         <div class="footer_widget">
                             <h3 class="footer_title">
