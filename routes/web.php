@@ -21,7 +21,13 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
+<<<<<<< HEAD
 
+=======
+Route::get('/contact', function () {
+    return view('contact');
+});
+>>>>>>> 9fb1f2ee4c607c957eec6cf5960a52153aea0f11
 Route::resource('/post','PostController');
 
 

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Lawyer</title>
+    <title>Spice Lab</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -39,20 +39,38 @@
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo-img">
                                     <a href="index.html">
+                                    </div>
                                         <img src="img/logo.png" alt="">
                                     </a>
                                 </div>
-                            </div>
                             <div class="col-xl-7 col-lg-8">
                                 <div class="main-menu  d-none d-lg-block">
                                     <nav>
                                         <ul id="navigation">
+<<<<<<< HEAD
                                             <ul id="navigation">
                                                 <li><a href="index.html">home</a></li>
                                                 <li><a href="/post">Admin</a></li>
                                                 <li><a href="/product">Product</a></li>
                                                 <li><a class="active" href="/contact">Contact</a></li>
                                             </ul>
+=======
+                                            <li><a href="index.html">home</a></li>
+                                            <li><a href="about.html">About</a></li>
+                                            <li><a  href="Practice.html">Practice Area</a></li>
+                                            <li><a href="#">blog <i class="ti-angle-down"></i></a>
+                                                <ul class="submenu">
+                                                    <li><a href="blog.html">blog</a></li>
+                                                    <li><a href="single-blog.html">single-blog</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">pages <i class="ti-angle-down"></i></a>
+                                                <ul class="submenu">
+                                                    <li><a href="elements.html">elements</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a class="active" href="/contact">Contact</a></li>
+>>>>>>> 9fb1f2ee4c607c957eec6cf5960a52153aea0f11
                                         </ul>
                                     </nav>
                                 </div>
@@ -83,7 +101,7 @@
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="bradcam_text text-center">
-                                <h3>Contact Us</h3>
+                                <h3>Spice Lab</h3>
                             </div>
                         </div>
                     </div>
@@ -120,18 +138,8 @@
                                     }]
                                 }
                             ];
-                            var map = new google.maps.Map(document.getElementById('map'), {
-                                center: {
-                                    lat: -31.197,
-                                    lng: 150.744
-                                },
-                                zoom: 9,
-                                styles: grayStyles,
-                                scrollwheel: false
-                            });
+                         );
                         }
-                    </script>
-                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&amp;callback=initMap">
                     </script>
     
                 </div>
@@ -174,21 +182,21 @@
                         <div class="media contact-info">
                             <span class="contact-info__icon"><i class="ti-home"></i></span>
                             <div class="media-body">
-                                <h3>Buttonwood, California.</h3>
-                                <p>Rosemead, CA 91770</p>
+                                <h3>Surabaya, Jawa Timur.</h3>
+                                <p>UC Town, Citraland</p>
                             </div>
                         </div>
                         <div class="media contact-info">
                             <span class="contact-info__icon"><i class="ti-tablet"></i></span>
                             <div class="media-body">
-                                <h3>+1 253 565 2365</h3>
-                                <p>Mon to Fri 9am to 6pm</p>
+                                <h3>+62 812 3138 1512</h3>
+                                <p>Mon to Fri 8am to 6pm</p>
                             </div>
                         </div>
                         <div class="media contact-info">
                             <span class="contact-info__icon"><i class="ti-email"></i></span>
                             <div class="media-body">
-                                <h3>support@colorlib.com</h3>
+                                <h3>support@spicelab.com</h3>
                                 <p>Send us your query anytime!</p>
                             </div>
                         </div>
@@ -286,7 +294,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
             </div>
         </footer>
         <!-- footer_end -->
-        
+
         <!-- JS here -->
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="js/vendor/jquery-1.12.4.min.js"></script>

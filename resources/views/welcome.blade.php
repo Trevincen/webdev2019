@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Lawyer</title>
+    <title>SpiceLab</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -49,8 +49,22 @@
                                 <nav>
                                     <ul id="navigation">
                                         <li><a class="active" href="index.html">home</a></li>
-                                        <li><a href="/post">Admin</a></li>
+                                        <li><a href="/posts">Admin</a></li>
                                         <li><a href="/product">Product</a></li>
+<<<<<<< HEAD
+=======
+                                        <li><a href="#">blog <i class="ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="blog.html">blog</a></li>
+                                                <li><a href="single-blog.html">single-blog</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">pages <i class="ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="elements.html">elements</a></li>
+                                            </ul>
+                                        </li>
+>>>>>>> 9fb1f2ee4c607c957eec6cf5960a52153aea0f11
                                         <li><a href="/contact">Contact</a></li>
                                     </ul>
                                 </nav>
@@ -397,9 +411,9 @@
                                     <img src="img/logo.png" alt="">
                                 </a>
                             </div>
-                            <p class="footer_text">200, A-block, Green road, USA <br>
+                            <p class="footer_text">UC Town, Surabaya,Jawa Timur, Indonesia <br>
                                 +10 367 267 2678 <br>
-                                <a class="domain" href="#">lawyer@contact.com</a></p>
+                                <a class="domain" href="#">contact@spicelab.com</a></p>
                             <div class="socail_links">
                                 <ul>
                                     <li>
@@ -428,22 +442,16 @@
                                     Useful Links
                             </h3>
                             <ul>
-                                <li><a href="#">About</a></li>
+                                <li><a href="/about">About</a></li>
                                 <li><a href="#">Blog</a></li>
-                                <li><a href="#"> Contact</a></li>
+                                <li><a href="/contact"> Contact</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-xl-4 col-md-6 col-lg-4">
                         <div class="footer_widget">
                             <h3 class="footer_title">
-                                    Subscribe
                             </h3>
-                            <form action="#" class="newsletter_form">
-                                <input type="text" placeholder="Enter your mail">
-                                <button type="submit">Sign Up</button>
-                            </form>
-                            <p class="newsletter_text">Subscribe newsletter to get updates</p>
                         </div>
                     </div>
                 </div>
