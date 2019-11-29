@@ -33,8 +33,8 @@ class PostController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
+     * @param  \Illuminate\Http\Request  $request
      */
     public function store(Request $request)
     {
@@ -43,17 +43,35 @@ class PostController extends Controller
             'description' => 'required',
             'Price' => 'required',
             'Picture' =>'Picture|nullable|max:1999'
+<<<<<<< HEAD
             
+=======
+>>>>>>> 3e84a70fb42c9667f8147a7753cc19573b27f945
         ]);
         
         $data = new Post();
         $data->title = $request->input('title');
         $data->description = $request->input('description');
         $data->Price = $request->input('Price');
-        $data->save();
+        
+        
+        if($request->hasFile('Picture')){
+            $filenameWithExt = $request->file('Picture')->getClientOriginalName();
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            $extension = $request->file('Picture')->getClientOriginalExtension();
+            $filenameSimpan = $filename.'_'.time().'.'.$extension;
+            $path = $request->file('Picture')->storeAs('public/foto' , $filenameSimpan);
+            $data ->Picture = $request -> input('Picture');
+        }else{
+             $filenameSimpan = $data ->Picture;
+        }
+        
+       $data ->Picture =$filenameSimpan;
+       $data -> save();   
 
-        return redirect('/post')->with('success', 'Data Makanan telah disimpan');
+       return redirect('/data')->with('success' , 'Data telah disimpan');
     }
+    
 
     /**
      * Display the specified resource.
@@ -95,6 +113,7 @@ class PostController extends Controller
         $edit->description = $request->input('description');
         $edit->Price = $request->input('Price');
         $edit->save();
+        
 
         return redirect('/post')->with('success', 'Data Makanan telah diubah');
     }

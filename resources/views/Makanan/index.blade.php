@@ -11,6 +11,7 @@
 				<div class="card-body">
 					<h5 class="card-title">{{$post->title}} </h5>
 					<p class="card-text">{!!$post->description!!}</p>
+					<p></p>
 					<p class="card-text">{{$post->Price}}</p>
 					<div class="text-center">
 					<a href="{{ url('PostController@edit') }}" class="btn btn-primary btn-block">Edit</a>
