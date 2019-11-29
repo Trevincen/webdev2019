@@ -41,7 +41,8 @@ class PostController extends Controller
 	    $this->validate($request, [
 		    'title' => 'required',
             'description' => 'required',
-            'Price' => 'required'
+            'Price' => 'required',
+            'Picture' =>'Picture|nullable|max:1999'
             
         ]);
         
