@@ -34,6 +34,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 
-Route::get('/product', 'PostController@show')->name('posts');
+Route::get('/product', 'viewcontroller@index')->name('posts');
 
 

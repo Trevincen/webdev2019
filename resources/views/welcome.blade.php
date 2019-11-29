@@ -383,7 +383,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
     <!-- footer_start -->
     <footer class="footer">
@@ -455,7 +455,7 @@
                     </div>
                 </div>
             </div>
-        </div> --}}
+        </div>
         <div class="copy-right_text">
             <div class="container">
                 <div class="footer_border"></div>

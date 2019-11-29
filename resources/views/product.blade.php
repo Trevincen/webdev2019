@@ -103,8 +103,7 @@
                                 <div class="hover_inner">
                                     <i class="flaticon-case"></i>
                                     <h3>{{$post->title}}</h3>
-                                    <p>There are many variations of passages of <br> Lorem Ipsum available, <br> but the
-                                        majority have suffered</p>
+                                    <p>{{$post->description}}</p>
                                     <a href="#" class="lern_more">Learn More</a>
                                 </div>
                             </div>
@@ -126,7 +125,7 @@
                                     majority have suffered</p>
                                 <a href="#" class="lern_more">Learn More</a>
                             </div>
-                        </div>
+                        </div>082140083094
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
