@@ -90,7 +90,7 @@
                             </div>
                             <div class="practice_hover text-center">
                                 <div class="hover_inner">
-                                    <i class="flaticon-case"></i>
+                                    <td> <img src="{{ asset('app/storage/app/public/foto/' . $post->Picture) }}" /> </td>
                                     <h3>{{$post->title}}</h3>
                                     <p>{{$post->Price}}</p>
                                     <a href="#" class="lern_more">Learn More</a>

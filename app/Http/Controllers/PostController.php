@@ -42,12 +42,8 @@ class PostController extends Controller
 		    'title' => 'required',
             'description' => 'required',
             'Price' => 'required',
-            'Picture' =>'Picture|nullable|max:1999'
-<<<<<<< HEAD
-            
-=======
->>>>>>> 3e84a70fb42c9667f8147a7753cc19573b27f945
-        ]);
+            'Picture' =>'image|nullable|max:1999'
+            ]);
         
         $data = new Post();
         $data->title = $request->input('title');
@@ -59,17 +55,18 @@ class PostController extends Controller
             $filenameWithExt = $request->file('Picture')->getClientOriginalName();
             $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
             $extension = $request->file('Picture')->getClientOriginalExtension();
-            $filenameSimpan = $filename.'_'.time().'.'.$extension;
-            $path = $request->file('Picture')->storeAs('public/foto' , $filenameSimpan);
-            $data ->Picture = $request -> input('Picture');
+            $filenamesimpan = $filename.'_'.time().'.'.$extension;
+            $path = $request->file('Picture')->storeAs('public/foto' ,
+            $filenamesimpan);
+            // $data = $request -> input('Picture');
         }else{
              $filenameSimpan = $data ->Picture;
         }
         
-       $data ->Picture =$filenameSimpan;
+        $data->Picture = $filenamesimpan;
        $data -> save();   
 
-       return redirect('/data')->with('success' , 'Data telah disimpan');
+       return redirect('/post')->with('success' , 'Data telah disimpan');
     }
     
 

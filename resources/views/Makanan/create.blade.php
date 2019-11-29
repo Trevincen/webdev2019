@@ -1,12 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<<<<<<< HEAD
 
-{!! Form::open(['action' => 'PostController@store', 'method' => 'POST']) !!}
-=======
-{!! Form::open(['action' => 'PostController@store', 'method' => 'POST','enctype' => 'multipart/form-data']) !!}
->>>>>>> 3e84a70fb42c9667f8147a7753cc19573b27f945
+{!! Form::open(['action' => 'PostController@store', 'method' => 'POST', 'enctype' => 'multipart/form-data']) !!}
 <div class="form-group">
     {{Form::label('title', 'Title')}}
     {{Form::text('title', '', 
@@ -15,9 +11,9 @@
 </div> 
 
 <div class="form-group">
-    {{Form::label('description', 'description')}}
+    {{Form::label('description', 'Description')}}
     {{Form::textarea('description', '', 
-        ['class' => 'form-control', 
+        ['class' => 'ckeditor', 
         'placeholder' => 'Description'])}}
 </div> 
 
