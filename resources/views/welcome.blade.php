@@ -48,7 +48,7 @@
                             <div class="main-menu  d-none d-lg-block">
                                 <nav>
                                     <ul id="navigation">
-                                        <li><a class="active" href="index.html">home</a></li>
+                                        <li><a class="active" href="/">Home</a></li>
                                         <li><a href="/post">Admin</a></li>
                                         <li><a href="/product">Product</a></li>
                                         <li><a href="/contact">Contact</a></li>
