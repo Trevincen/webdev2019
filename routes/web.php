@@ -17,9 +17,9 @@ Route::get('/', function () {
 // Route::get('/product', function () {
 //     return view('product');
 // });
-Route::get('/contact', function () {
-    return view('contact');
-});
+// Route::get('/contact', function () {
+//     return view('contact');
+// });
 
 Route::resource('/post','PostController');
 
@@ -36,4 +36,7 @@ Auth::routes();
 
 Route::get('/product', 'viewcontroller@index')->name('posts');
 
+Route::get('/contact','ContactController@index');
+
+Route::post('/contact','ContactController@store');
 

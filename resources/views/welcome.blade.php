@@ -38,11 +38,11 @@
                 <div class="container-fluid p-0">
                     <div class="row align-items-center justify-content-between no-gutters">
                         <div class="col-xl-2 col-lg-2">
-                            <div class="logo-img">
+                            {{-- <div class="logo-img">
                                 <a href="index.html">
                                     <img src="img/logo.png" alt="">
                                 </a>
-                            </div>
+                            </div> --}}
                         </div>
                         <div class="col-xl-7 col-lg-8">
                             <div class="main-menu  d-none d-lg-block">
@@ -385,11 +385,11 @@
                 <div class="row">
                     <div class="col-xl-4 col-md-6 col-lg-3">
                         <div class="footer_widget">
-                            <div class="footer_logo">
+                            {{-- <div class="footer_logo">
                                 <a href="index.html">
-                                    <img src="img/logo.png" alt="">
+                                    <img src="img/logoyanggagal.png"sizes="16x16" alt="">
                                 </a>
-                            </div>
+                            </div> --}}
                             <p class="footer_text">UC Town, Surabaya,Jawa Timur, Indonesia <br>
                                 +10 367 267 2678 <br>
                                 <a class="domain" href="#">contact@spicelab.com</a></p>
@@ -398,28 +398,12 @@
                     </div>
                     <div class="col-xl-2 col-md-6 col-lg-2">
                         <div class="footer_widget">
-                            <h3 class="footer_title">
-                                    Practice Area
-                            </h3>
-                            <ul>
-                                <li><a href="#">Business law
-                                    </a></li>
-                                <li><a href="#">Finance law</a></li>
-                                <li><a href="#">Education law</a></li>
-                                <li><a href="#">Family law</a></li>
-                            </ul>
+                            
                         </div>
                     </div>
                     <div class="col-xl-2 col-md-6 col-lg-2">
                         <div class="footer_widget">
-                            <h3 class="footer_title">
-                                    Useful Links
-                            </h3>
-                            <ul>
-                                <li><a href="/about">About</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="/contact"> Contact</a></li>
-                            </ul>
+                           
                         </div>
                     </div>
                     <div class="col-xl-4 col-md-6 col-lg-4">
