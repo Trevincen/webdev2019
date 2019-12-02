@@ -40,8 +40,8 @@
                                 <div class="logo-img">
                                     <a href="index.html">
                                     </div>
-                                        {{-- <img src="img/logo.jpg" alt="">
-                                    </a> --}}
+                                        <img src="img/logo.png" alt="">
+                                    </a>
                                 </div>
                             <div class="col-xl-7 col-lg-8">
                                 <div class="main-menu  d-none d-lg-block">
