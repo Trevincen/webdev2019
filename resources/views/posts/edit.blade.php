@@ -23,7 +23,10 @@
                 <label for="Price">Price</label>            
                 <input type="text" class="form-control" id="Price"             
                 placeholder="Masukkan Price" name="Price" value="{{$posts->Price}}">  
-              </div>  
+          </div> 
+          <div class="form-group">
+	              {{Form::file('Picture')}}
+          </div> 
               <button type="submit" class="btn btn-primary">Ubah Data</button></form>        
           </div>    
           </div></div>

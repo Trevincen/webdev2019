@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\contact;
 
 class ContactController extends Controller
 {
@@ -35,9 +36,9 @@ class ContactController extends Controller
     public function store(Request $request)
     {
     $contacts = new contact();
-    $contacts ->nama = $request -> nama;
-    $contacts ->email = $request -> email;
-    $contacts ->message = $request -> message;
+    $contacts ->nama = $request ->input('nama');
+    $contacts ->email = $request ->input ('email');
+    $contacts ->message = $request ->input ('message');
 
     $contacts ->save();
 

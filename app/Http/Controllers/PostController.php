@@ -58,13 +58,12 @@ class PostController extends Controller
             $filenamesimpan = $filename.'_'.time().'.'.$extension;
             $path = $request->file('Picture')->storeAs('public/foto' ,
             $filenamesimpan);
-            // $data = $request -> input('Picture');
         }else{
              $filenameSimpan = $data ->Picture;
         }
         
         $data->Picture = $filenamesimpan;
-       $data -> save();   
+        $data -> save();   
 
        return redirect('/post')->with('success' , 'Data telah disimpan');
     }
@@ -109,6 +108,18 @@ class PostController extends Controller
         $edit->title = $request->input('title');
         $edit->description = $request->input('description');
         $edit->Price = $request->input('Price');
+        if($request->hasFile('Picture')){
+            $filenameWithExt = $request->file('Picture')->getClientOriginalName();
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            $extension = $request->file('Picture')->getClientOriginalExtension();
+            $filenamesimpan = $filename.'_'.time().'.'.$extension;
+            $path = $request->file('Picture')->move('public/foto' ,
+            $filenamesimpan);
+        }else{
+             $filenameSimpan = $edit ->Picture;
+        }
+        
+        $edit->Picture = $filenamesimpan;
         $edit->save();
         
 

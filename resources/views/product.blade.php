@@ -39,10 +39,10 @@
                 <div class="container-fluid p-0">
                     <div class="row align-items-center justify-content-between no-gutters">
                         <div class="col-xl-2 col-lg-2">
-                            {{-- <div class="logo-img">
+                            <div class="logo-img">
                                 <a href="index.html">
                                     <img src="img/logo.png" alt="">
-                                </a> --}}
+                                </a>
                             </div>
                         </div>
                         <div class="col-xl-7 col-lg-8">
@@ -84,7 +84,7 @@
                             </div>
                             <div class="practice_hover text-center">
                                 <div class="hover_inner">
-                                    <td> <img src="{{ asset('app/storage/app/public/foto/' . $post->Picture) }}" /> </td>
+                                    <td> <img src="{{asset('/storage/foto/' . $post->Picture) }}" style="width:150px; height:150px;"  /> </td>
                                     <h3>{{$post->title}}</h3>
                                     <p>{{$post->Price}}</p>
                                     <a href="#" class="lern_more">Learn More</a>
