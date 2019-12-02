@@ -4,7 +4,7 @@
     <div class="row">        
       <div class="col-10">        
         <h1 class="mt-3">Form Ubah Data</h1>        
-        <form method="post" action="/post/{{$posts->id}}">        
+        <form method="post" action="/post/{{$posts->id}}", enctype="multipart/form-data">        
           @method('patch')        
           @csrf         
           <div class="form-group">            
@@ -25,7 +25,9 @@
                 placeholder="Masukkan Price" name="Price" value="{{$posts->Price}}">  
           </div> 
           <div class="form-group">
-	              {{Form::file('Picture')}}
+                {{Form::label('Picture', 'Picture')}}
+          <br>
+                {{Form::file('Picture')}}
           </div> 
               <button type="submit" class="btn btn-primary">Ubah Data</button></form>        
           </div>    

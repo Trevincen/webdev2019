@@ -105,22 +105,16 @@ class PostController extends Controller
     public function update(Request $request, $id)
     {
         $edit = post::find($id);
-        $edit->title = $request->input('title');
-        $edit->description = $request->input('description');
-        $edit->Price = $request->input('Price');
+        $input = $request->all();
         if($request->hasFile('Picture')){
             $filenameWithExt = $request->file('Picture')->getClientOriginalName();
             $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
             $extension = $request->file('Picture')->getClientOriginalExtension();
             $filenamesimpan = $filename.'_'.time().'.'.$extension;
-            $path = $request->file('Picture')->move('public/foto' ,
-            $filenamesimpan);
-        }else{
-             $filenameSimpan = $edit ->Picture;
+            $path = $request->file('Picture')->storeAs('public/foto' ,$filenamesimpan);
+            $input['Picture'] = $filenamesimpan;
         }
-        
-        $edit->Picture = $filenamesimpan;
-        $edit->save();
+        $edit->update($input);
         
 
         return redirect('/post')->with('success', 'Data Makanan telah diubah');
