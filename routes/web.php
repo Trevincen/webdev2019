@@ -36,7 +36,7 @@ Auth::routes();
 
 Route::get('/product', 'viewcontroller@index')->name('posts');
 
-Route::get('/contact','ContactController@index');
+Route::get('/contact','ContactController@create');
 
 Route::post('/contact','ContactController@store');
 
