@@ -38,11 +38,11 @@
                 <div class="container-fluid p-0">
                     <div class="row align-items-center justify-content-between no-gutters">
                         <div class="col-xl-2 col-lg-2">
-                            {{-- <div class="logo-img">
+                            <div class="logo-img">
                                 <a href="index.html">
-                                    <img src="img/logo.png" alt="">
+                                    <img src="img/logo.jpeg" alt="">
                                 </a>
-                            </div> --}}
+                            </div>
                         </div>
                         <div class="col-xl-7 col-lg-8">
                             <div class="main-menu  d-none d-lg-block">
