@@ -38,7 +38,7 @@
                         <div class="row align-items-center justify-content-between no-gutters">
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo-img">
-                                    <a href="index.html">
+                                    <a href="/">
                                     </div>
                                         <img src="img/logo.jpeg" alt="">
                                     </a>
