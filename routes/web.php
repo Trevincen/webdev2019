@@ -11,6 +11,8 @@
 |
 */
 
+use Illuminate\Support\Facades\Auth;
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -20,6 +22,7 @@ Route::get('/', function () {
 // Route::get('/contact', function () {
 //     return view('contact');
 // });
+
 
 Route::resource('/post','PostController');
 
@@ -40,3 +43,4 @@ Route::get('/contact','ContactController@create');
 
 Route::post('/contact','ContactController@store')->name('contact.store');
 
+Auth::routes(['verify' => true]);
