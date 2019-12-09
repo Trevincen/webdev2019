@@ -49,7 +49,6 @@
                                         <ul id="navigation">
                                             <ul id="navigation">
                                                 <li><a href="/">Home</a></li>
-                                                <li><a href="/post">Admin</a></li>
                                                 <li><a href="/product">Product</a></li>
                                                 <li><a class="active" href="/contact">Contact</a></li>
                                             </ul>

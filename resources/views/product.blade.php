@@ -50,7 +50,6 @@
                                 <nav>
                                     <ul id="navigation">
                                         <li><a href="/">Home</a></li>
-                                        <li><a href="/post">Admin</a></li>
                                         <li><a class="active" href="/product">Product</a></li>
                                         <li><a href="/contact">Contact</a></li>
                                     </ul>

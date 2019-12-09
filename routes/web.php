@@ -27,11 +27,15 @@ Route::get('/', function () {
 Route::resource('/post','PostController');
 
 
-Auth::routes();
+Auth::routes(['verify' => true]);
+
+Route::get('/home', function () {
+    return view('post');
+})->middleware('verified');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Auth::routes();
+Auth::routes(); 
 
 Route::get('/admin', 'HomeController@index')->name('home');
 
@@ -43,4 +47,4 @@ Route::get('/contact','ContactController@create');
 
 Route::post('/contact','ContactController@store')->name('contact.store');
 
-Auth::routes(['verify' => true]);
+

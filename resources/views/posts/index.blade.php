@@ -29,6 +29,7 @@
 </div>
 {{ $posts->links() }}  
 
-				
+<a href="/post/create" class="btn btn-primary">Create</a>
+<a href="/" class="btn btn-primary">Back</a>			
 	
 @endsection
