@@ -29,15 +29,11 @@ Route::resource('/post','PostController');
 
 Auth::routes(['verify' => true]);
 
-Route::get('/home', function () {
-    return view('post');
-})->middleware('verified');
-
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/post', 'PostController@index')->name('home')->middleware('verified');
 
 Auth::routes(); 
 
-Route::get('/admin', 'HomeController@index')->name('home');
+Route::get('/admin', 'PostController@index')->name('home');
 
 Auth::routes();
 
