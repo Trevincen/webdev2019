@@ -11,17 +11,16 @@ class CaptchaController extends Controller
 {
     public function index()
     {
-       return view('captchaform');
+       return view('login');
     }  
     public function storeCaptchaForm(Request $request)
     {
         request()->validate([
-        'name' => 'required',
         'email' => 'required',
-        'mobile_number' => 'required',
+        'password' => 'required',
         'g-recaptcha-response' => 'required|captcha',
         ]);
  
-        return view('home');
+        return view('admin');
     }
 }
