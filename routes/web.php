@@ -46,3 +46,5 @@ Route::post('/contact','ContactController@store')->name('contact.store');
 Route::get('captcha-form', 'CaptchaController@index');
 
 Route::post('store-captcha-form', 'CaptchaController@storeCaptchaForm');
+
+Route::get('/sendemail','MailController@index');
