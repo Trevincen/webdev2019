@@ -8,7 +8,7 @@
                 <div class="card-header">{{ __('Login') }}</div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
+                <form method="POST" action="{{ route('login') }} , {{url('store-captcha-form')}}">
                         @csrf
 
                         <div class="form-group row">
@@ -45,6 +45,7 @@
                               {!! NoCaptcha::display() !!}
                             <span class="text-danger">{{ $errors->first('g-recaptcha-response' ) }}</span>
                           </div>
+                       
 
                         <div class="form-group row">
                             <div class="col-md-6 offset-md-4">
