@@ -47,6 +47,6 @@ class LoginController extends Controller
             'g-recaptcha-response' => 'required|captcha',
         ]);
         
-        return view('admin');
+        return view('home');
     }
 }
