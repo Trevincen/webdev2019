@@ -16,7 +16,8 @@ class CaptchaController extends Controller
     public function storeCaptchaForm(Request $request)
     {
         request()->validate([
-        
+        'email' => 'required',
+        'password' => 'required',
         'g-recaptcha-response' => 'required|captcha',
         ]);
  
