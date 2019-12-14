@@ -51,8 +51,7 @@ class HomeController extends Controller
 	    $this->validate($request, [
 		    'title' => 'required',
             'description' => 'required',
-            'Price' => 'required'
-            
+            'Price' => 'required',
         ]);
         
         $data = new Post();

@@ -11,10 +11,15 @@ class MailController extends Controller
 {
 	public function index(){
  
-		Mail::to("standyo01@student.ciputra.ac.id")->send(new kirimemail());
+		Mail::to("trevincentambunan@gmail.com")->send(new kirimemail());
         
         return "Email has been sent";
-        return view('admin');
+		return view('admin');
+		
+		
 	}
+	
+
+	
  
 }

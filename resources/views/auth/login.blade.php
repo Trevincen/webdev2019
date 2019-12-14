@@ -38,12 +38,12 @@
                                 @enderror
                             </div>
                         </div>
-
+                        
                         <div class="form-group row">
-                            <label for="captcha" class="col-md-4 col-form-label text-md-right">Captcha</label>
+                            <label for="captcha" class="col-md-4 col-form-label text-md-right"></label>
                               {!! NoCaptcha::renderJs() !!}
                               {!! NoCaptcha::display() !!}
-                            <span class="text-danger">{{ $errors->first('g-recaptcha-response') }}</span>
+                            <span class="text-danger">{{ $errors->first('g-recaptcha-response' ) }}</span>
                           </div>
 
                         <div class="form-group row">

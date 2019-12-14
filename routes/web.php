@@ -31,17 +31,14 @@ Auth::routes(['verify' => true]);
 
 Route::get('/post', 'PostController@index')->name('home')->middleware('verified');
 
-Auth::routes(); 
-
-Route::get('/admin', 'PostController@index')->name('home');
-
-Auth::routes();
 
 Route::get('/product', 'viewcontroller@index')->name('posts');
 
 Route::get('/contact','ContactController@create');
 
 Route::post('/contact','ContactController@store')->name('contact.store');
+
+Route::get('/contact','ContactController@create');
 
 Route::get('captcha-form', 'CaptchaController@index');
 
