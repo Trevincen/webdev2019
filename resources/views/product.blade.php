@@ -85,8 +85,8 @@
                                 <div class="hover_inner">
                                     <td> <img src="{{asset('/storage/foto/' . $post->Picture) }}" style="width:150px; height:150px;"  /> </td>
                                     <h3>{{$post->title}}</h3>
-                                    <p>{{$post->description}}</p>
-                                    <p>Rp. {{$post->Price}}</p>
+                                    <p>{{$post->Price}}</p>
+                                    <a href="#" class="lern_more">Learn More</a>
                                 </div>
                             </div>
                         </div>
