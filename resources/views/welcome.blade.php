@@ -78,7 +78,7 @@
                                 <h3>Spice Lab <br>
                                     </h3>
                                 <p>Always Serve High Quality Meat</p>
-                                <a href="/product" class="boxed-btn4 ">Pre Order Now</a>
+                                <a href="/product" class="boxed-btn4 ">See Product</a>
                             </div>
                         </div>
                     </div>

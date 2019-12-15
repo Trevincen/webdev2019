@@ -10,7 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 use Illuminate\Support\Facades\Auth;
 
 Route::get('/', function () {
@@ -30,7 +29,6 @@ Route::resource('/post','PostController');
 Auth::routes(['verify' => true]);
 
 Route::get('/post', 'PostController@index')->name('home')->middleware('verified');
-
 
 Route::get('/product', 'viewcontroller@index')->name('posts');
 

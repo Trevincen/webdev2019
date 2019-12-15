@@ -7,7 +7,7 @@
 	@if(count($posts)>0)             
 		@foreach ($posts as $post)    
 		<div class="col-sm-3">          
-			<div class="card" style="width: 11rem; height: 25rem; margin:10px">
+			<div class="card" style="width: 11rem; height: 30rem; margin:10px">
 				<div class="card-body">
 					<h5 class="card-title">{{$post->title}} </h5>
 					<p class="card-text">{!!$post->description!!}</p>
