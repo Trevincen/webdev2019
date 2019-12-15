@@ -21,6 +21,6 @@ class CaptchaController extends Controller
         'g-recaptcha-response' => 'required|captcha',
         ]);
  
-        return view('home');
+        return view('admin');
     }
 }
